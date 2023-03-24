@@ -8,10 +8,10 @@ date-meta: 20 March 2023
 
 **Team members:** 
 
-- [Member 1](Qinzhi Liang)
-- [Member 2](Yan Su)
-- [Member 3](Keyue Zhang)
-- [Member 3](Ziqian Xiong)
+- [Qinzhi Liang]
+- [Yan Su]
+- [Keyue Zhang]
+- [Ziqian Xiong]
 
 ## 📝 Project Description
 

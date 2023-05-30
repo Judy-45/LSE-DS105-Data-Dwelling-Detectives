@@ -59,6 +59,70 @@ Overall, these improvements aim to enhance the validity and reliability of the q
 
 ## 📈 **Data Analysis**
 
+We have utilized a radar chart to depict the average and median scores of each hostel brand across the five factors, aiming to showcase the strengths and weaknesses of different hostel brands and assist potential residents in selecting the most suitable hostel for their needs. It is important to note that this chart solely reflects the characteristics of each individual hostel and is not suitable for comparing different accomadation brands. This limitation arises from the utilization of average and median figures, as the number of halls of residence significantly varies across brands.
+
+![iq mean radar diagram](https://github.com/Judy-45/LSE-DS105-Data-Dwelling-Detectives/blob/main/figures/IQ%20mean%20radar%20diagram.png) 
+![iq median radar diagram](https://github.com/Judy-45/LSE-DS105-Data-Dwelling-Detectives/blob/main/figures/iq%20median%20radar%20diagram.png)
+
+IQ Apartments has some notable advantages based on the radar chart. The “transportation” and “pharmacy" factor stands out with a high score of 4, indicating excellent access to different transportation options, which is highly convenient. Additionally, both "food & dairy products"received scores about 3.6, suggesting decent nearby options for essential goods and services.
+
+However, there are a couple of potential disadvantages. The scores of 3 for both "safety score" and "diversity of surrounding shops" while the safety score is not particularly low, there may be some aspects that need attention. Similarly, the score for the diversity of surrounding shops implies limited options nearby.
+
+The median score for IQ flat is similar to the average for all factors, showing consistent overall performance. However, the slightly higher score in 'food and dairy' suggests better availability or quality of food and dairy products nearby.
+
+In summary, IQ Apartments offer advantages like convenient transportation and access to essential goods and services. However, potential disadvantages include safety measures and limited diversity in nearby shops.
+
+
+Unite students
+
+Based on the radar chart, Unite Students Apartments have both advantages and potential disadvantages. It excels in "transportation" and "pharmacy" with a score of 4, indicating excellent access to transportation and pharmacy services, which is highly convenient for residents.
+![unite students mean radar graph](https://github.com/Judy-45/LSE-DS105-Data-Dwelling-Detectives/blob/main/figures/Unite%20students%20mean%20radar%20diagram.png)
+![unite students median radar graph](https://github.com/Judy-45/LSE-DS105-Data-Dwelling-Detectives/blob/main/figures/Unite%20students%20median%20radar%20graph.png)
+In terms of convenience, it also scores reasonably well with 3.3 for "diversity of surrounding shops" and 3.4 for "food & dairy products," suggesting a decent variety of shops and food options nearby.
+
+However, there are a couple of potential disadvantages. The "safety score" has an average of 2.8, indicating room for improvement in safety measures. Additionally, the median score of 2.6 for "safety score" suggests inconsistency or differing perceptions of safety among residents.
+
+To summarize, Unite Students Apartments offer advantages in transportation, access to essential services, and nearby shops and food options. However, there may also be potential disadvantages related to safety that should not be overlooked when choosing accomadation.
+
+Urbanest
+
+For urbanest's accommodations, based on the radar chart, The scores of 3.4 for "safety score" might appears that Urbanest Apartments might have a potential disadvantage in terms of safety, as indicated by the relatively lower score. It suggests that there may be areas for improvement in ensuring a safer environment within the apartment complex or its surroundings.
+![urbanest mean radar graph](https://github.com/Judy-45/LSE-DS105-Data-Dwelling-Detectives/blob/main/figures/urbanest%20mean%20radar%20diagram.png)
+![urbanest median radar graph](https://github.com/Judy-45/LSE-DS105-Data-Dwelling-Detectives/blob/main/figures/urbanest%20median%20radar%20diagram.png)
+
+Also, the score of 2.9 for "diversity of surrounding shops" indicates that there might be limitations in terms of the variety or range of shops available in the vicinity. This could impact residents' choices and convenience when it comes to shopping options.
+
+However, it's important to note that Urbanest Apartments still have notable advantages, such as excellent transportation options, convenient access to pharmacy services, and a good variety of food and dairy products. Despite the lower safety score, the other factors seem to be rated highly, which can contribute to the overall appeal of the apartment.
+
+When considering the median score, which is broadly similar to the average across all factors, there is still an obvious decrease specifically in the 'pharmacy' option. This suggests some potential inconsistency or lower perceptions regarding pharmacy availability or quality among residents.
+
+In summary, while Urbanest Apartments offer advantages such as transportation convenience,and access to pharmacy services, there may be a potential disadvantage in terms of safety and shopping options, as indicated by the lower score. 
+
+Chapter
+Based on the radar chart, Chapter Apartments have strengths and one possible weakness. Advantages include high scores of 4 for "transportation" and "pharmacy," indicating excellent transportation options and convenient access to pharmacies. Scores of 3.5 for "food & dairy products" suggest a satisfactory food options.
+
+![Chapter mean radar diagram](https://github.com/Judy-45/LSE-DS105-Data-Dwelling-Detectives/blob/main/figures/chapter%20mean%20radar%20diagram.png)
+![Chapter median radar diagram](https://github.com/Judy-45/LSE-DS105-Data-Dwelling-Detectives/blob/main/figures/chapter%20median%20diagram.png))
+
+However, Chapter Apartments might have a potential disadvantage in terms of safety, as indicated by the relatively lower score of 3. It suggests that there may be areas for improvement in ensuring a safer environment within the apartment complex or its surroundings.
+
+The median score is similar to the average overall, but notably lower for "diversity of surrounding shops." This suggests some variability or lower perceptions of shop diversity among residents. 
+
+In summary, while Chapter Apartments offer advantages such as transportation convenience, access to pharmacy services, and a satisfactory range of food options, there may be a potential disadvantage in terms of safety, as indicated by the lower score.
+
+
+
+Scape
+Based on the radar chart, Scape Apartments have both advantages and potential disadvantages. They excel in "pharmacy" with a high score of 4, providing excellent access to essential services. They also have reasonable safety measures (3.6), a satisfactory variety of nearby shops (3.3), and decent options for food and dairy products (3.7).
+![Scape mean radar graph](https://github.com/Judy-45/LSE-DS105-Data-Dwelling-Detectives/blob/main/figures/scape%20mean%20radar%20diagram.png)
+![Scape median radar graph](https://github.com/Judy-45/LSE-DS105-Data-Dwelling-Detectives/blob/main/figures/scape%20median%20radar%20diagram.png)
+However, a potential drawback is the score of 3 for "transportation," indicating room for improvement in available transportation options near the complex. The median score, similar to the average, shows an increase in the 'diversity of surrounding shops,' suggesting a higher variety of nearby shops, which is advantageous for residents.
+
+To summarize, Scape Apartments offer convenient access to pharmacies, reasonable safety measures, satisfactory nearby shops, and food options. However, transportation options may need improvement.
+
+
+
+
 ### **crime rate**
 ### **most convenient accomodation locations**
 #### **y-axis: mins**

@@ -141,13 +141,14 @@ Based on the data provided, it is possible to compare the average time taken to 
 
 The 'Scape' brand has the highest median (55), indicating a potentially higher number of surrounding shops compared to the slightly lower median of the 'Unite students' brand, with other brands falling in between. This suggests that 'Scape' may offer a greater variety of shops nearby. In terms of dispersion, 'Scape' has a concentrated upper quartile, while 'Unite students' has a relatively lower upper quartile, indicating that 'Scape' data is more concentrated in higher values. Regarding outliers, 'iq' has four, 'Unite students' has two, and 'Scape' has one outlier, while 'Urbanest' and 'Chapter' have none. Thus, 'Urbanest' and 'Chapter' are relatively stable, while 'Scape' performs well in terms of surrounding shops, data concentration, and stability compared to 'iq' and 'Unite students'.
 
-![picture of top 10 ranking of students accomodation](https://github.com/Judy-45/LSE-DS105-Data-Dwelling-Detectives/blob/main/Data%20cleaning%20of%20caculating%20distance.png)
+
 
 
 ## 🖼️ **Results**
 ![top 10 dorm ranking](https://github.com/Judy-45/LSE-DS105-Data-Dwelling-Detectives/blob/3007ba2a202394fe664f8280a34bf4bd1968b245/figures/top%2010%20dorm%20ranking.jpg)
 
 We have finally selected the ten highest scoring student residences based on our scoring system (As shown in the chart). Unite students made up the highest percentage of the top ten, followed by urbanest, iQ and Chapter. none of the flats in Scape made it into the top ten. Students can refer to this ranking when choosing their accommodation and select the accommodation that meets their expectations.
+
 ![pie chart](https://github.com/Judy-45/LSE-DS105-Data-Dwelling-Detectives/blob/fec01a11c50ba3f44179bd1bfa0fb84d33c4537a/figures/pie%20chart.png)
 
 

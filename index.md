@@ -145,7 +145,7 @@ The 'Scape' brand has the highest median (55), indicating a potentially higher n
 
 
 ## 🖼️ **Results**
-
+![top 10 dorm ranking](https://github.com/Judy-45/LSE-DS105-Data-Dwelling-Detectives/blob/3007ba2a202394fe664f8280a34bf4bd1968b245/figures/top%2010%20dorm%20ranking.jpg)
 We have finally selected the ten highest scoring student residences based on our scoring system (As shown in the chart). Unite students made up the highest percentage of the top ten, followed by urbanest, iQ and Chapter. none of the flats in Scape made it into the top ten. Students can refer to this ranking when choosing their accommodation and select the accommodation that meets their expectations.
 ### **top 5 according to scoring system**
 ### **last 5 according to scoring system**

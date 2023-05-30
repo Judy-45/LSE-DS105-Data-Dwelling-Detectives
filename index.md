@@ -62,7 +62,7 @@ Overall, these improvements aim to enhance the validity and reliability of the q
 
 We used a radar chart (shown below) to show average and median scores of hostel brands across five factors, highlighting their strengths and weaknesses. This helps people choose the right hostel. However, it's important to remember that this chart only represents each hostel's traits and cannot be used to compare different accommodation brands. This limitation comes from using average and median values due to the varying number of halls of residence among brands.
 #### **IQ Apartments**
-![iq mean radar diagram](https://github.com/Judy-45/LSE-DS105-Data-Dwelling-Detectives/blob/main/figures/IQ%20mean%20radar%20diagram.png) 
+![iQ mean radar](https://github.com/Judy-45/LSE-DS105-Data-Dwelling-Detectives/blob/1ae0877780203c4a5e06af3708d323a4250aa5c2/figures/iQ%20mean%20radar.png) 
 ![iq median radar diagram](https://github.com/Judy-45/LSE-DS105-Data-Dwelling-Detectives/blob/main/figures/iq%20median%20radar%20diagram.png)
 
 IQ Apartments has some notable advantages based on the radar chart. The “transportation” and “pharmacy" factor stands out with a high score of 4, indicating excellent access to different transportation options, which is highly convenient. Additionally, both "food & dairy products"received scores about 3.6, suggesting decent nearby options for essential goods and services.

@@ -155,4 +155,10 @@ We have finally selected the ten highest scoring student residences based on our
 To assist international students in London in selecting suitable accommodation, we have developed a rating system. This system evaluates common student accommodations and provides a meaningful ranking. We employed a questionnaire to gather quantitative data, aiming to understand the overall perception of London students regarding the importance of various factors. The final ranking was determined by considering indicators such as "safety," "diversity of surrounding shops," "transportation," "food and dairy products," and "pharmacy." The weighting of these factors in the final score was determined based on their perceived importance as indicated by the questionnaire participants. We utilized box plots and radar plots to not only compare and contrast the strengths and weaknesses of each factor across different hostel brands but also to identify the overall strengths and weaknesses of each individual hostel brand. As a result, we identified the ten highest-scoring student residences, providing students with the opportunity to choose the most suitable residence for their needs.
 
 
-## 📚 **References**
+
+
+## 📚 **Reference Links**
+1. [ Google Maps](https://www.google.co.uk/maps).
+1. [](https://duckduckgo.com).
+1. [](https://duckduckgo.com).
+1. [](https://duckduckgo.com).

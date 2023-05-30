@@ -54,7 +54,11 @@ To deal with it, we change the mode parameter in its API, which is changed from 
 
 ### **Crime rate and diversity data cleaning problem**
 
-Moreover，
+Moreover， when doing data cleaning, we identify three dormitories without crime rate information. Also, one of them which is "stratford one" is the oly one lacking in diversity data as well.
+![sample of data cleaning problem of crime rate](https://github.com/Judy-45/LSE-DS105-Data-Dwelling-Detectives/blob/main/figures/data%20cleaning%20of%20crime%20rate%20.png)
+![sample of data cleaning problem of crime rate and diversity](https://github.com/Judy-45/LSE-DS105-Data-Dwelling-Detectives/blob/main/figures/data%20cleaning%20of%20three%20nan%20values.png)
+To deal with them, we are going to drop them when analyzing as below.
+![ dealing with data cleaning problem of crime rate and diversity](https://github.com/Judy-45/LSE-DS105-Data-Dwelling-Detectives/blob/main/figures/dealing%20with%20crime%20rate%20data%20cleaning%20problem.png)
 ## **Scoring system**
 
 We utilized two questionnaires to determine the weighting of different indicators in the ratings. Our first questionnaire consisted of five items: crime rate, rental prices, transport, accessibility, and diversity. Participants were asked to rank these five items in order of importance. A total of 55 volunteer participants completed the questionnaire. The results of this questionnaire provided us with a preliminary understanding of the weighting between the different options based on the collected data. However, due to the absence of a specific scale for evaluating the importance of the options and the limited number of participants, we questioned the scientific validity and objectivity of the questionnaire.

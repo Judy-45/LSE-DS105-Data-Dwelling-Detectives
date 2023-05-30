@@ -6,7 +6,7 @@ date-meta: 20 March 2023
 
 # **Rank Student Accommodation Locations In London**
 
-**Team members:** 
+**Team members and collaboration:** 
 
 - Qinzhi Liang -database maintenance
 - Yan Su       -data collection

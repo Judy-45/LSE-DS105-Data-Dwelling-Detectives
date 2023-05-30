@@ -2,10 +2,10 @@
 
 **Team members and collaboration:** 
 
-- Qinzhi Liang -database maintenance
+- Qinzhi Liang -webpage construction
 - Yan Su       -data collection
 - Keyue Zhang  -data cleaning and transformation, data visulisation
-- Ziqian Xiong -ducumentation
+- Ziqian Xiong -documentation
 
 ### **Initial goals**
 Our group is aimed to rank the top five student accommodation locations in London, empowering students to make informed decisions. By incorporating the collective wisdom of fellow students, we offer a user-friendly platform that offers personalized recommendations and valuable information.

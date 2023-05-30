@@ -59,7 +59,7 @@ Overall, these improvements aim to enhance the validity and reliability of the q
 
 ## 📈 **Data Analysis**
 
-We have utilized radar charts(shown below) to depict the average and median scores of each hostel brand across the five factors, aiming to showcase the strengths and weaknesses of different hostel brands and assist potential residents in selecting the most suitable hostel for their needs. It is important to note that this chart solely reflects the characteristics of each individual hostel and is not suitable for comparing different accomadation brands. This limitation arises from the utilization of average and median figures, as the number of halls of residence significantly varies across brands.
+We used a radar chart (shown below) to show average and median scores of hostel brands across five factors, highlighting their strengths and weaknesses. This helps people choose the right hostel. However, it's important to remember that this chart only represents each hostel's traits and cannot be used to compare different accommodation brands. This limitation comes from using average and median values due to the varying number of halls of residence among brands.
 
 ![iq mean radar diagram](https://github.com/Judy-45/LSE-DS105-Data-Dwelling-Detectives/blob/main/figures/IQ%20mean%20radar%20diagram.png) 
 ![iq median radar diagram](https://github.com/Judy-45/LSE-DS105-Data-Dwelling-Detectives/blob/main/figures/iq%20median%20radar%20diagram.png)

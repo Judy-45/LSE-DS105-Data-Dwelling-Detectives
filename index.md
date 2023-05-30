@@ -170,8 +170,10 @@ To assist international students in London in selecting suitable accommodation, 
 
 ## 📚 **Reference Links**
 1. [Google Maps](https://www.google.co.uk/maps).
-2. [IQ Student Accommodation](https://www.iqstudentaccommodation.com/).
-3. [Unite Student Accommodation](https://www.unitestudents.com/london).
-4. [Urbanest Accommodation](https://uk.urbanest.com/).
-5. [Chapter Accommodation ](https://www.chapter-living.com/).
-6. [Scape Accommodation](https://www.scape.com/).
+2. [ukcrimestats](https://www.ukcrimestats.com/api/create_user.php)
+3. [foursquare](https://location.foursquare.com/developer/reference/places-nearby)
+4. [IQ Student Accommodation](https://www.iqstudentaccommodation.com/).
+5. [Unite Student Accommodation](https://www.unitestudents.com/london).
+6. [Urbanest Accommodation](https://uk.urbanest.com/).
+7. [Chapter Accommodation ](https://www.chapter-living.com/).
+8. [Scape Accommodation](https://www.scape.com/).

@@ -40,7 +40,7 @@ In order to achieve our goal on helping students to find student accommodations 
 ### **Using API**
 
 When using the Google map API, the latitude and longitude data of accommodations are collected, by pointing a place, then expanding the scope, we get the name of the site with the same keywords within and outside its scope. There is a sample of using google API.
-！[sample of using google API](https://github.com/Judy-45/LSE-DS105-Data-Dwelling-Detectives/blob/main/figures/data%20sample%20of%20using%20google%20map%20API.jpeg)
+![sample of using google API](https://github.com/Judy-45/LSE-DS105-Data-Dwelling-Detectives/blob/main/figures/data%20sample%20of%20using%20google%20map%20API.jpeg)
 
 Using the crime rate API, there are different crime types including violent crime, weapon crime thefts and drugs. And in the Foursquare API, the diversity of surrounding shops is include which is a factor of assessing accommodations’ convenience level. 
 
@@ -49,7 +49,7 @@ Using the crime rate API, there are different crime types including violent crim
 Before getting all over these data scores combined, there are data cleaning problems worked out.
 
 Initially, the method of calculating the distance was to match the address field of the obtained result with the latitude and longitude of the student dormitory. However, the results could not match actual situation. For example, when using this method to get a dormitory It takes 32 minutes to go to the supermarket, but if we try to search it with Google map, we find that it only takes one minute. 
-！[sample of data cleaning](https://github.com/Judy-45/LSE-DS105-Data-Dwelling-Detectives/blob/main/figures/Data%20cleaning%20of%20caculating%20distance.png)
+![sample of data cleaning](https://github.com/Judy-45/LSE-DS105-Data-Dwelling-Detectives/blob/main/figures/Data%20cleaning%20of%20caculating%20distance.png)
 To deal with it, we change the mode parameter in its API, which is changed from driving to walking by default. Also, to increase the accuracy of the destination, we separately changed the address from the result as the search word and changed it to use the place ID of Google map as the search. 
 ## **Scoring system**
 

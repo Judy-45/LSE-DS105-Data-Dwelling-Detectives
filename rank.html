@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)file:///C:/DS105/project/rank.html -->
+<html lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Exploring the Intersection of Sports and Social Issues - A Textual Analysis of World Cup and LGBTQ+ Tweets</title>
+<meta name="generator" content="Jekyll v3.9.3">
+<meta property="og:title" content="Exploring the Intersection of Sports and Social Issues - A Textual Analysis of World Cup and LGBTQ+ Tweets">
+<meta property="og:locale" content="en_US">
+<link rel="canonical" href="https://github.com/Judy-45/LSE-DS105-Data-Dwelling-Detectives/">
+<meta property="og:url" content="https://github.com/Judy-45/LSE-DS105-Data-Dwelling-Detectives/">
+<meta property="og:site_name" content="Exploring the Intersection of Sports and Social Issues - A Textual Analysis of World Cup and LGBTQ+ Tweets">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<meta property="twitter:title" content="Exploring the Intersection of Sports and Social Issues - A Textual Analysis of World Cup and LGBTQ+ Tweets">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","headline":"Exploring the Intersection of Sports and Social Issues - A Textual Analysis of World Cup and LGBTQ+ Tweets","name":"Exploring the Intersection of Sports and Social Issues - A Textual Analysis of World Cup and LGBTQ+ Tweets","url":"https://github.com/Judy-45/LSE-DS105-Data-Dwelling-Detectives/"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com/">
+    <link rel="preload" href="./rank_files/css" as="style" type="text/css" crossorigin="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="./rank_files/style.css">
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+  </head>
+  <body>
+    <a id="skip-to-content" href="https://github.com/Judy-45/LSE-DS105-Data-Dwelling-Detectives/#content">Skip to the content.</a>
+
+    <header class="page-header" role="banner">
+      <h1 class="project-name">Rank
+Student Accommodation
+Locations  
+In London</h1>
+      <h2 class="project-tagline"></h2>
+      
+        <a href="https://github.com/Judy-45/LSE-DS105-Data-Dwelling-Detectives" class="btn">View on GitHub</a>
+      
+      
+    </header>
+
+    <main id="content" class="main-content" role="main">
+      <p><em>By Keyue Zhang,
+Qinzhi Liang,
+Yan Su,
+Ziqian Xiong</em></p>
+
+<h2 id="introduction">Introduction</h2>
+
+<p>Our website is a valuable resource dedicated to assisting students in finding the ideal accommodation that perfectly suits their needs. We understand that choosing the right place to live is a significant decision, and we're here to make the process easier for you.
+
+
+
+</p>
+
+<p>
+
+Through a comprehensive questionnaire survey, we have gathered insights from numerous students, enabling us to assign different weights to four important factors: crime rate, convenience, distance to pharmacies, transportation, and enjoyment. These weights have been determined based on the preferences and opinions of the student community, ensuring that our scoring system reflects their priorities.
+
+</p><h3 id="Initial goals">Initial goals</h3>
+
+<p>Our goal is to provide an objective and reliable assessment of each accommodation option, empowering students to make informed decisions. By incorporating the collective wisdom of fellow students, we offer a user-friendly platform that offers personalized recommendations and valuable information.
+
+
+</p>
+
+<p>
+
+We understand that every student has unique preferences and requirements when it comes to choosing accommodation. Our website aims to simplify the selection process by providing a tailored experience. Whether you prioritize safety, convenience, access to healthcare, transportation, or overall enjoyment, our scoring system takes all these factors into account.
+
+</p><h3 id="Motivations">Motivations</h3>
+
+<p>Motivated by the desire to enhance the accommodation selection process for students, our website provides a reliable resource that comprehensively assesses factors impacting the quality of student living. Discover a wealth of information to help you find the perfect accommodation that aligns with your unique preferences. Our platform supports you throughout this crucial decision-making process, enabling choices that enhance your overall student experience. With a data-driven approach and a commitment to student well-being, we aim to be your trusted companion in finding the ideal place to live during your educational journey. </p>
+
+<p></p>
+
+<hr>
+
+<h2 id="data">Data collection</h2>
+
+<p></p>
+
+<h3 id="Data sources">Data sources</h3>
+
+<p>In order to achieve our goal on helping students to find student accommodations in London, with the factors influencing choosing student accommodation considered, we choose Google places APT, UK crime rates API and Four-square API as our data sources. Google maps API could help finding distance between accommodation and certain places (Universities, station etc.). gives us location of over 78 accommodations information of Chapter, Unite students, Urbanest, IQ and Scape. And the UK crime rate provide the crime rate data from 2019 to 2022 which helps accessing the safety level of certain accommodations. Moreover, the Foursquare API have the information of surrounding shops like supermarkets, pharmacies, pub etc., helping us evaluate the convenience level of accommodation. </p>
+
+
+
+
+<h3 id="Using API">Using API</h3>
+
+
+
+
+<p>When using the Google map API, the latitude and longitude data of accommodations are collected, by pointing a place, then expanding the scope, we get the name of the site with the same keywords within and outside its scope. Using the crime rate API, there are different crime types including violent crime, weapon crime thefts and drugs. And in the Foursquare API, the diversity of surrounding shops is include which is a factor of assessing accommodations’ convenience level. (Picture needed)
+
+</p>
+
+
+
+<hr>
+
+<h2 id="Data cleaning">Data cleaning</h2>
+
+<p>Before getting all over these data scores combined, there are data cleaning problems worked out.
+
+
+
+
+</p>
+
+<p>
+
+
+
+Initially, the method of calculating the distance was to match the address field of the obtained result with the latitude and longitude of the student dormitory. However, the results could not match actual situation. For example, when using this method to get a dormitory It takes 32 minutes to go to the supermarket, but if we try to search it with Google map, we find that it only takes one minute. To deal with it, we change the mode parameter in its API, which is changed from driving to walking by default. Also, to increase the accuracy of the destination, we separately changed the address from the result as the search word and changed it to use the place ID of Google map as the search. (Picture needed)
+
+
+</p>
+
+<hr>
+
+<h2 id="Scoring system">Scoring system</h2>
+
+<p>We utilized two questionnaires to determine the weighting of different indicators in the ratings. Our first questionnaire consisted of five items: crime rate, rental prices, transport, accessibility, and diversity. Participants were asked to rank these five items in order of importance. A total of 55 volunteer participants completed the questionnaire. The results of this questionnaire provided us with a preliminary understanding of the weighting between the different options based on the collected data. However, due to the absence of a specific scale for evaluating the importance of the options and the limited number of participants, we questioned the scientific validity and objectivity of the questionnaire.</p>
+
+<p>Consequently, we revised and improved the questionnaire. In our second questionnaire, we included an additional question regarding the gender and nationality of the participant. This was done to determine whether the participant belonged to our target sample, specifically international students in London. In order to address the lack of quantitative data, we implemented a rating scale. Participants were asked to rate the importance of each option on a scale from 0 to 100. By doing so, we obtained an average "importance score" for each item. The ratio of the mean scores for the different options was then calculated to determine the degree of influence of each indicator on the final rating.</p><p>However, it is important to note certain aspects of this questionnaire. Firstly, our options may not encompass all the thoughts and perspectives of the participants. Thus, the results may be biased if a participant selects an option that does not truly reflect their opinion. Additionally, since the participants complete the questionnaire in an uncontrolled environment, there may be extraneous variables that could affect the results. For instance, participants may experience reduced attention spans due to fatigue effect, which can potentially impact the outcomes. Nonetheless, as a self-report technique, the questionnaire provides a convenient means of understanding the participants' thoughts. Moreover, the use of quantitative data enables scientific calculations without any human bias.</p><p>Overall, these improvements aim to enhance the validity and reliability of the questionnaire in determining the weighting of indicators for the final ratings.</p>
+
+<hr>
+
+<h2 id="Data analysis">Data analysis</h2>
+
+<h3 id="crime rate">crime rate</h3>
+
+
+<h3 id="most convenient accomodation locations">most convenient accomodation locations</h3>
+<h4 id="y-axis: mins">y-axis: mins</h4><h3 id="&lt;h3 id=" correlation="" between="" rent="" price="">correlation between rent price
+</h3><h4 id="heatmap ">heatmap </h4>
+<h4 id="line chart">line chart</h4><hr>
+
+<h2 id="Results">Results</h2><h3 id="top 5 according to scoring system">top 5 according to scoring system</h3>
+
+
+<h3 id="last 5 according to scoring system">last 5 according to scoring system</h3>
+
+
+      
+    </main>
+  
+
+</body></html>

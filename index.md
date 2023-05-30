@@ -125,7 +125,7 @@ To summarize, Scape Apartments offer convenient access to pharmacies, reasonable
 
 ### **crime rate**
 ### **most convenient accomodation locations**
-#### **y-axis: mins**
+
 ### **correlation between rent price**
 #### **heatmap**
 #### **line chart**

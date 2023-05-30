@@ -12,6 +12,6 @@ Our group is aimed to rank the top five student accommodation locations in Londo
 
 We understand that every student has unique preferences and requirements when it comes to choosing accommodation. Our website aims to simplify the selection process by providing a tailored experience. Whether you prioritize safety, convenience, access to healthcare, transportation, or overall enjoyment, our scoring system takes all these factors into account.
 
-###**final webpage**
+**final webpage**
 Here is the link to our final webpage:
 https://cheeseoct.github.io/LSE-DS105-2023-project/rank.html

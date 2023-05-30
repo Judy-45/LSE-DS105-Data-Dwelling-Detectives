@@ -16,10 +16,10 @@ date-meta: 20 March 2023
 ## 📝 **Introduction**
 
 
-
 Our website is a valuable resource dedicated to assisting students in finding the ideal accommodation that perfectly suits their needs. We understand that choosing the right place to live is a significant decision, and we're here to make the process easier for you.
 
 Through a comprehensive questionnaire survey, we have gathered insights from numerous students, enabling us to assign different weights to four important factors: crime rate, convenience, distance to pharmacies, transportation, and enjoyment. These weights have been determined based on the preferences and opinions of the student community, ensuring that our scoring system reflects their priorities.
+![a photo of student accommodation](https://github.com/Judy-45/LSE-DS105-Data-Dwelling-Detectives/blob/main/figures/a%20photo%20of%20student%20dorm.jpeg)
 
 ### **Initial goals**
 

@@ -57,7 +57,7 @@ However, it is important to note certain aspects of this questionnaire. Firstly,
 Overall, these improvements aim to enhance the validity and reliability of the questionnaire in determining the weighting of indicators for the final ratings.
 
 ## 📈 Analysis
-![picture of top 10 ranking of students accomodation](top 10 dorm ranking.jpg)
+![picture of top 10 ranking of students accomodation](https://github.com/Judy-45/LSE-DS105-Data-Dwelling-Detectives/blob/main/Data%20cleaning%20of%20caculating%20distance.png)
 
 
 ## 🖼️ Results

@@ -125,11 +125,11 @@ In summary, Scape Apartments offer convenient access to pharmacies, reasonable s
 ![crimte rate boxplot graph](https://github.com/Judy-45/LSE-DS105-Data-Dwelling-Detectives/blob/main/figures/crime%20rate%20score%20boxplot%20graph.jpeg)
 
 In the boxplot diagram of crime rate scores of each brand, Urbanest’s accommodations have the highest median which means higher safety level, compared with the lowest median of the Unite students. Therefore, the accommodations of Unite students are not really competitive in safety aspect. Also, Scape and Scape provide similar quality of safety level of accommodations.
-#### avg time to food service analysis****
+#### **Average time to food service analysis**
 ![averge time to nearby food service](https://github.com/Judy-45/LSE-DS105-Data-Dwelling-Detectives/blob/main/figures/avg%20time%20to%20food%20service%20boxplot%20graph.jpeg)
 In the food service aspect, Urbanest’ accommodations have lower median, indicating easier access to supermarkets, convenience and restaurants. While Unite students has the highest median which means students staying here have to spend more time in hunting food.
 
-#### **averge time to nearby phamarmacy analysis**
+#### **Averge time to nearby phamarmacy analysis**
 ![averge time to nearby phamarmacy](https://github.com/Judy-45/LSE-DS105-Data-Dwelling-Detectives/blob/main/figures/avg%20time%20to%20nearby%20pharmacy%20boxplot%20graph.jpeg)
 In the aspect of accessing to pharmacy, Chapter with lowest median gives lowest median, indicating shortest time to get to nearby pharmacy. Although Urbanest has greater median, their difference are not extremely significant. However, the outlier of IQ, which has a greatly long time in accessing to pharmacy should not be ignored
 

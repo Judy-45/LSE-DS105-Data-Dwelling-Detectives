@@ -124,10 +124,7 @@ To summarize, Scape Apartments offer convenient access to pharmacies, reasonable
 #### **IQ Apartments**
 #### **Unite students apartments**
 #### **Urbanest**
-
-
-
-
+#### **Scape Apartments**
 
 ![picture of top 10 ranking of students accomodation](https://github.com/Judy-45/LSE-DS105-Data-Dwelling-Detectives/blob/main/Data%20cleaning%20of%20caculating%20distance.png)
 

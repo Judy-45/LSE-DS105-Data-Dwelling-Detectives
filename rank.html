@@ -2,22 +2,20 @@
 <!-- saved from url=(0034)file:///C:/DS105/project/rank.html -->
 <html lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
- 
-    
-    
+
 <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Exploring the Intersection of Sports and Social Issues - A Textual Analysis of World Cup and LGBTQ+ Tweets</title>
+<title>Rank Student Accommodation Locations In London</title>
 <meta name="generator" content="Jekyll v3.9.3">
-<meta property="og:title" content="Exploring the Intersection of Sports and Social Issues - A Textual Analysis of World Cup and LGBTQ+ Tweets">
+<meta property="og:title" content="Rank Student Accommodation Locations In London">
 <meta property="og:locale" content="en_US">
 <link rel="canonical" href="https://github.com/Judy-45/LSE-DS105-Data-Dwelling-Detectives/">
 <meta property="og:url" content="https://github.com/Judy-45/LSE-DS105-Data-Dwelling-Detectives/">
-<meta property="og:site_name" content="Exploring the Intersection of Sports and Social Issues - A Textual Analysis of World Cup and LGBTQ+ Tweets">
+<meta property="og:site_name" content="Rank Student Accommodation Locations In London">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary">
-<meta property="twitter:title" content="Exploring the Intersection of Sports and Social Issues - A Textual Analysis of World Cup and LGBTQ+ Tweets">
+<meta property="twitter:title" content="Rank Student Accommodation Locations In London">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","headline":"Exploring the Intersection of Sports and Social Issues - A Textual Analysis of World Cup and LGBTQ+ Tweets","name":"Exploring the Intersection of Sports and Social Issues - A Textual Analysis of World Cup and LGBTQ+ Tweets","url":"https://github.com/Judy-45/LSE-DS105-Data-Dwelling-Detectives/"}</script>
+{"@context":"https://schema.org","@type":"WebSite","headline":"Rank Student Accommodation Locations In London","name":"Rank Student Accommodation Locations In London","url":"https://github.com/Judy-45/LSE-DS105-Data-Dwelling-Detectives/"}</script>
 <!-- End Jekyll SEO tag -->
 
     <link rel="preconnect" href="https://fonts.gstatic.com/">
@@ -56,20 +54,12 @@ Ziqian Xiong</em></p>
 <h2 id="introduction">Introduction</h2>
 
 <p>Our website is a valuable resource dedicated to assisting students in finding the ideal accommodation that perfectly suits their needs. We understand that choosing the right place to live is a significant decision, and we're here to make the process easier for you.
-
-
-
 </p>
-
 <p>
 
 Through a comprehensive questionnaire survey, we have gathered insights from numerous students, enabling us to assign different weights to four important factors: crime rate, convenience, distance to pharmacies, transportation, and enjoyment. These weights have been determined based on the preferences and opinions of the student community, ensuring that our scoring system reflects their priorities.
-
-</p><h3 id="Initial goals">Initial goals</h3>
-
+<p><img src="https://judy-45.github.io/LSE-DS105-Data-Dwelling-Detectives/figures/a%20photo%20of%20student%20dorm.jpeg" alt="alt text"></p></p><h3 id="Initial goals">Initial goals</h3>
 <p>Our goal is to provide an objective and reliable assessment of each accommodation option, empowering students to make informed decisions. By incorporating the collective wisdom of fellow students, we offer a user-friendly platform that offers personalized recommendations and valuable information.
-
-
 </p>
 
 <p>
@@ -84,7 +74,7 @@ We understand that every student has unique preferences and requirements when it
 
 <hr>
 
-<h2 id="data">Data collection</h2>
+<h2 id="data">Data Collection</h2>
 
 <p></p>
 
@@ -93,42 +83,28 @@ We understand that every student has unique preferences and requirements when it
 <p>In order to achieve our goal on helping students to find student accommodations in London, with the factors influencing choosing student accommodation considered, we choose Google places APT, UK crime rates API and Four-square API as our data sources. Google maps API could help finding distance between accommodation and certain places (Universities, station etc.). gives us location of over 78 accommodations information of Chapter, Unite students, Urbanest, IQ and Scape. And the UK crime rate provide the crime rate data from 2019 to 2022 which helps accessing the safety level of certain accommodations. Moreover, the Foursquare API have the information of surrounding shops like supermarkets, pharmacies, pub etc., helping us evaluate the convenience level of accommodation. </p>
 
 
-
-
 <h3 id="Using API">Using API</h3>
 
-
-
-
-<p>When using the Google map API, the latitude and longitude data of accommodations are collected, by pointing a place, then expanding the scope, we get the name of the site with the same keywords within and outside its scope. Using the crime rate API, there are different crime types including violent crime, weapon crime thefts and drugs. And in the Foursquare API, the diversity of surrounding shops is include which is a factor of assessing accommodations’ convenience level. (Picture needed)
+<p>When using the Google map API, the latitude and longitude data of accommodations are collected, by pointing a place, then expanding the scope, we get the name of the site with the same keywords within and outside its scope. Using the crime rate API, there are different crime types including violent crime, weapon crime thefts and drugs. And in the Foursquare API, the diversity of surrounding shops is include which is a factor of assessing accommodations’ convenience level.
 
 </p>
 
-
-
+<p><img src="https://judy-45.github.io/LSE-DS105-Data-Dwelling-Detectives/figures/data%20sample%20of%20using%20google%20map%20API.jpeg" alt="alt text"></p>
 <hr>
 
-<h2 id="Data cleaning">Data cleaning</h2>
-
-<p>Before getting all over these data scores combined, there are data cleaning problems worked out.
-
-
-
-
-</p>
-
-<p>
-
-
-
-Initially, the method of calculating the distance was to match the address field of the obtained result with the latitude and longitude of the student dormitory. However, the results could not match actual situation. For example, when using this method to get a dormitory It takes 32 minutes to go to the supermarket, but if we try to search it with Google map, we find that it only takes one minute. To deal with it, we change the mode parameter in its API, which is changed from driving to walking by default. Also, to increase the accuracy of the destination, we separately changed the address from the result as the search word and changed it to use the place ID of Google map as the search. (Picture needed)
-
-
-</p>
-
+<h2 id="Data cleaning">Data Cleaning</h2>
+<h3 id="Distance data cleaning problem">Distance data cleaning problem</h3>
+<p>Before getting all over these data scores combined, there are data cleaning problems worked out.</p>
+<p>Initially, the method of calculating the distance was to match the address field of the obtained result with the latitude and longitude of the student dormitory. However, the results could not match actual situation. For example, when using this method to get a dormitory It takes 32 minutes to go to the supermarket, but if we try to search it with Google map, we find that it only takes one minute.</p>
+<p>To deal with it, we change the mode parameter in its API, which is changed from driving to walking by default. Also, to increase the accuracy of the destination, we separately changed the address from the result as the search word and changed it to use the place ID of Google map as the search.</p>
+<h3 id="Crime rate and diversity data cleaning problem">Crime rate and diversity data cleaning problem</h3>
+<p>Moreover， when doing data cleaning, we identify three dormitories without crime rate information. Also, one of them which is "stratford one" is the oly one lacking in diversity data as well.</p>
+<p><img src="https://judy-45.github.io/LSE-DS105-Data-Dwelling-Detectives/figures/data%20cleaning%20of%20crime%20rate%20.png" alt="alt text"></p>
+<p><img src="https://judy-45.github.io/LSE-DS105-Data-Dwelling-Detectives/figures/data%20cleaning%20of%20three%20nan%20values.png" alt="alt text"></p>
+<p>To deal with them, we are going to drop them when analyzing as below.</p>
+<p><img src="https://judy-45.github.io/LSE-DS105-Data-Dwelling-Detectives/figures/dealing%20with%20crime%20rate%20data%20cleaning%20problem.png" alt="alt text"></p>
 <hr>
-
-<h2 id="Scoring system">Scoring system</h2>
+<h2 id="Scoring system">Scoring System</h2>
 
 <p>We utilized two questionnaires to determine the weighting of different indicators in the ratings. Our first questionnaire consisted of five items: crime rate, rental prices, transport, accessibility, and diversity. Participants were asked to rank these five items in order of importance. A total of 55 volunteer participants completed the questionnaire. The results of this questionnaire provided us with a preliminary understanding of the weighting between the different options based on the collected data. However, due to the absence of a specific scale for evaluating the importance of the options and the limited number of participants, we questioned the scientific validity and objectivity of the questionnaire.</p>
 
@@ -136,24 +112,123 @@ Initially, the method of calculating the distance was to match the address field
 
 <hr>
 
-<h2 id="Data analysis">Data analysis</h2>
+<h2 id="Data analysis">Data Analysis</h2>
 
-<h3 id="crime rate">crime rate</h3>
+<h3 id="Rader diagrams analysis">Rader diagrams analysis</h3>
 
+<p>We used a radar chart (shown below) to show average and median scores of hostel brands across five factors, highlighting their strengths and weaknesses. This helps people choose the right hostel. However, it's important to remember that this chart only represents each hostel's traits and cannot be used to compare different accommodation brands. This limitation comes from using average and median values due to the varying number of halls of residence among brands.</p>
+<h4 id="IQ Apartments">IQ Apartments</h4>
 
-<h3 id="most convenient accomodation locations">most convenient accomodation locations</h3>
-<h4 id="y-axis: mins">y-axis: mins</h4><h3 id="&lt;h3 id=" correlation="" between="" rent="" price="">correlation between rent price
-</h3><h4 id="heatmap ">heatmap </h4>
-<h4 id="line chart">line chart</h4><hr>
-
-<h2 id="Results">Results</h2><h3 id="top 5 according to scoring system">top 5 according to scoring system</h3>
+<p></p>
 
 
-<h3 id="last 5 according to scoring system">last 5 according to scoring system</h3>
+
+<p><img src="https://judy-45.github.io/LSE-DS105-Data-Dwelling-Detectives/figures/iq%20mean%20radar%20graph.jpeg" alt="alt text"></p>
+<h6 id="Mean radar diagram of IQ"><em>Mean radar diagram of IQ</em></h6>
+<style>h6 {text-align: center;}</style>
+<p><img src="https://judy-45.github.io/LSE-DS105-Data-Dwelling-Detectives/figures/iq%20median%20radar%20diagram.png" alt="alt text"></p>
+<h6 id="Median radar diagram of IQ"><em>Median radar diagram of IQ</em></h6>
+<p>IQ Apartments has some notable advantages based on the radar chart. The “transportation” and “pharmacy" factor stands out with a high score of 4, indicating excellent access to different transportation options, which is highly convenient. Additionally, both "food & dairy products"received scores about 3.6, suggesting decent nearby options for essential goods and services.</p>
+<p>However, there are a couple of potential disadvantages. The "safety score" has an average of 2.8, indicating room for improvement in safety measures. Additionally, the median score of 2.6 for "safety score" suggests inconsistency or differing perceptions of safety among residents.</p>
+<p>The median score for IQ flat is similar to the average for all factors, showing consistent overall performance. However, the slightly higher score in 'food and dairy' suggests better availability or quality of food and dairy products nearby.</p>
+<p>Therefore, IQ Apartments offer advantages like convenient transportation and access to essential goods and services. However, potential disadvantages include safety measures and limited diversity in nearby shops.</p>
+<h4 id="Unite students apartments">Unite students apartments</h4>
+<p>Based on the radar charts(shown below), Unite Students Apartments have both advantages and potential disadvantages. It excels in "transportation" and "pharmacy" with a score of 4, indicating excellent access to transportation and pharmacy services, which is highly convenient for residents.</p>
+<p><img src="https://judy-45.github.io/LSE-DS105-Data-Dwelling-Detectives/figures/Unite%20students%20mean%20radar%20diagram.png" alt="alt text"></p>
+<h6 id="Mean radar diagram of Unite student"><em>Mean radar diagram of Unite student</em></h6>
+<p><img src="https://judy-45.github.io/LSE-DS105-Data-Dwelling-Detectives/figures/Unite%20students%20median%20radar%20graph.png" alt="alt text"></p>
+<h6 id="Median radar diagram of Unite student"><em>Median radar diagram of Unite student</em></h6>
+<p>In terms of convenience, it also scores reasonably well with 3.3 for "diversity of surrounding shops" and 3.4 for "food & dairy products," suggesting a decent variety of shops and food options nearby.</p>
+<p>However, there are a couple of potential disadvantages. The "safety score" has an average of 2.8, indicating room for improvement in safety measures. Additionally, the median score of 2.6 for "safety score" suggests inconsistency or differing perceptions of safety among residents.</p>
+<p>To summarize, Unite Students Apartments offer advantages in transportation, access to essential services, and nearby shops and food options.</p>
+<h4 id="Urbanest">Urbanest</h4>
+<p>For urbanest's accommodations, based on the radar charts shown below, The scores of 3.4 for "safety score" might appears that Urbanest Apartments might have a potential disadvantage in terms of safety, as indicated by the relatively lower score. It suggests that there may be areas for improvement in ensuring a safer environment within the apartment complex or its surroundings.</p>
+<p><img src="https://judy-45.github.io/LSE-DS105-Data-Dwelling-Detectives/figures/urbanest%20mean%20radar%20diagram.png" alt="alt text"></p>
+<h6 id="Mean radar diagram of Urbanest"><em>Mean radar diagram of Urbanest</em></h6>
+<p><img src="https://judy-45.github.io/LSE-DS105-Data-Dwelling-Detectives/figures/urbanest%20median%20radar%20diagram.png" alt="alt text"></p>
+<h6 id="Median radar diagram of Urbanest"><em>Median radar diagram of Urbanest</em></h6>
+<p>Also, the score of 2.9 for "diversity of surrounding shops" indicates that there might be limitations in terms of the variety or range of shops available in the vicinity. This could impact residents' choices and convenience when it comes to shopping options.</p>
+<p>However, it's important to note that Urbanest Apartments still have notable advantages, such as excellent transportation options, convenient access to pharmacy services, and a good variety of food and dairy products. Despite the lower safety score, the other factors seem to be rated highly, which can contribute to the overall appeal of the apartment.</p>
+<p>When considering the median score, which is broadly similar to the average across all factors, there is still an obvious decrease specifically in the 'pharmacy' option. This suggests some potential inconsistency or lower perceptions regarding pharmacy availability or quality among residents.</p>
+<p>To conclude, while Urbanest Apartments offer advantages such as transportation convenience,and access to pharmacy services, there may be a potential disadvantage in terms of safety and shopping options, as indicated by the lower score.</p>
+<h4 id="Chapter Apartments">Chapter Apartments</h4>
+<p>Based on the radar chars shown below, Chapter Apartments have strengths and one possible weakness. Advantages include high scores of 4 for "transportation" and "pharmacy," indicating excellent transportation options and convenient access to pharmacies. Scores of 3.5 for "food & dairy products" suggest a satisfactory food options.</p>
+<p><img src="https://judy-45.github.io/LSE-DS105-Data-Dwelling-Detectives/figures/chapter%20mean%20radar%20diagram.png" alt="alt text"></p>
+<h6 id="Mean radar diagram of Chapter"><em>Mean radar diagram of Chapter</em></h6>
+<p><img src="https://judy-45.github.io/LSE-DS105-Data-Dwelling-Detectives/figures/chapter%20median%20diagram.png" alt="alt text"></p>
+<h6 id="Median radar diagram of Chapter"><em>Median radar diagram of Chapter</em></h6>
+<p>However, Chapter Apartments might have a potential disadvantage in terms of safety, as indicated by the relatively lower score of 3. It suggests that there may be areas for improvement in ensuring a safer environment within the apartment complex or its surroundings.</p>
+<p>The median score is similar to the average overall, but notably lower for "diversity of surrounding shops." This suggests some variability or lower perceptions of shop diversity among residents.</p>
+<p>Overall, while Chapter Apartments offer advantages such as transportation convenience, access to pharmacy services, and a satisfactory range of food options, there may be a potential disadvantage in terms of safety, as indicated by the lower score.</p>
+<h4 id="Scape Apartments">Scape Apartments</h4>
+<p>Based on the radar charts shown below, Scape Apartments have both advantages and potential disadvantages. They excel in "pharmacy" with a high score of 4, providing excellent access to essential services. They also have reasonable safety measures (3.6), a satisfactory variety of nearby shops (3.3), and decent options for food and dairy products (3.7).</p>
+<p><img src="https://judy-45.github.io/LSE-DS105-Data-Dwelling-Detectives/figures/scape%20mean%20radar%20diagram.png" alt="alt text"></p>
+<h6 id="Mean radar diagram of Scape"><em>Mean radar diagram of Scape</em></h6>
+<p><img src="https://judy-45.github.io/LSE-DS105-Data-Dwelling-Detectives/figures/scape%20median%20radar%20diagram.png" alt="alt text"></p>
+<h6 id="Median radar diagram of Scape"><em>Median radar diagram of Scape</em></h6>
+<p>However, a potential drawback is the score of 3 for "transportation," indicating room for improvement in available transportation options near the complex. The median score, similar to the average, shows an increase in the 'diversity of surrounding shops,' suggesting a higher variety of nearby shops, which is advantageous for residents.</p>
+<p>To summarize, Scape Apartments offer convenient access to pharmacies, reasonable safety measures, satisfactory nearby shops, and food options. However, transportation options may need improvement.</p>
 
 
-      
+
+<h3 id="Boxplot patterns analysis">Boxplot patterns analysis</h3>
+<h4 id="Crime rate analysis">Crime rate analysis</h4>
+<p><img src="https://judy-45.github.io/LSE-DS105-Data-Dwelling-Detectives/figures/crime%20rate%20score%20boxplot%20graph.jpeg" alt="alt text"></p>
+<p>In the boxplot diagram of crime rate scores of each brand, Urbanest’s accommodations have the highest median which means higher safety level, compared with the lowest median of the Unite students. Therefore, the accommodations of Unite students are not really competitive in safety aspect. Also, Scape and Scape provide similar quality of safety level of accommodations.</p>
+<h4 id="Average time to food service analysis">Average time to food service analysis</h4>
+<p><img src="https://judy-45.github.io/LSE-DS105-Data-Dwelling-Detectives/figures/avg%20time%20to%20food%20service%20boxplot%20graph.jpeg" alt="alt text"></p>
+<p>In the food service aspect, Urbanest’ accommodations have lower median, indicating easier access to supermarkets, convenience and restaurants. While Unite students has the highest median which means students staying here have to spend more time in hunting food.</p>
+<h4 id="Averge time to nearby phamarmacy analysis">Averge time to nearby phamarmacy analysis</h4>
+<p><img src="https://judy-45.github.io/LSE-DS105-Data-Dwelling-Detectives/figures/avg%20time%20to%20nearby%20pharmacy%20boxplot%20graph.jpeg" alt="alt text"></p>
+<p>In the aspect of accessing to pharmacy, Chapter with lowest median gives lowest median, indicating shortest time to get to nearby pharmacy. Although Urbanest has greater median, their difference are not extremely significant. However, the outlier of IQ, which has a greatly long time in accessing to pharmacy should not be ignored</p>
+<h4 id="Average time to subway and bus stops">Average time to subway and bus stops</h4>
+<p><img src="https://judy-45.github.io/LSE-DS105-Data-Dwelling-Detectives/figures/avg%20time%20to%20subway%20and%20bus%20stations%20boxplot%20graph.jpeg" alt="alt text"></p>
+<p>Based on the data provided, it is possible to compare the average time taken to reach a bus or metro stop for different hostel brands. The 'iQ' and 'Urbanest' brands have relatively low median and interquartile values, indicating a shorter average travel time. However, it is worth noting that both brands have outliers, indicating occasional unusually long travel times. On the other hand, the 'Unite students' and 'Chapter' brands exhibit higher median and interquartile values, indicating longer average travel times, but without any significant outliers. In contrast, the 'Scape' brand stood out with a longer average travel time, and it did have an outlier. This suggests that, in most cases, this brand has a longer average travel time, but occasionally there are instances where the travel time is significantly longer. Based on these analyses, the 'iQ' and 'Urbanest' may be more convenient for commuting as they have shorter average travel times, despite the outliers.</p>
+<h4 id="Diversity of surrounding shops">Diversity of surrounding shops</h4>
+<p><img src="https://judy-45.github.io/LSE-DS105-Data-Dwelling-Detectives/figures/num%20of%20different%20stores%20around%20boxplot%20graph.png" alt="alt text"></p>
+
+<p>The 'Scape' brand has the highest median (55), indicating a potentially higher number of surrounding shops compared to the slightly lower median of the 'Unite students' brand, with other brands falling in between. This suggests that 'Scape' may offer a greater variety of shops nearby. In terms of dispersion, 'Scape' has a concentrated upper quartile, while 'Unite students' has a relatively lower upper quartile, indicating that 'Scape' data is more concentrated in higher values. Regarding outliers, 'iq' has four, 'Unite students' has two, and 'Scape' has one outlier, while 'Urbanest' and 'Chapter' have none. Thus, 'Urbanest' and 'Chapter' are relatively stable, while 'Scape' performs well in terms of surrounding shops, data concentration, and stability compared to 'iq' and 'Unite students'.</p>
+
+
+
+<h2 id="Results">Results</h2>
+<p>We have finally selected the ten highest scoring student residences based on our scoring system (As shown in the chart). Unite students made up the highest percentage of the top ten, followed by urbanest, iQ and Chapter. none of the flats in Scape made it into the top ten. Students can refer to this ranking when choosing their accommodation and select the accommodation that meets their expectations.</p>
+<p><img src="https://judy-45.github.io/LSE-DS105-Data-Dwelling-Detectives/figures/pie%20chart.png" alt="alt text"></p>
+<hr>
+<h2 id="Conclusion">Conclusion</h2>
+<p>To assist international students in London in selecting suitable accommodation, we have developed a rating system. This system evaluates common student accommodations and provides a meaningful ranking. We employed a questionnaire to gather quantitative data, aiming to understand the overall perception of London students regarding the importance of various factors. The final ranking was determined by considering indicators such as "safety," "diversity of surrounding shops," "transportation," "food and dairy products," and "pharmacy." The weighting of these factors in the final score was determined based on their perceived importance as indicated by the questionnaire participants. We utilized box plots and radar plots to not only compare and contrast the strengths and weaknesses of each factor across different hostel brands but also to identify the overall strengths and weaknesses of each individual hostel brand. As a result, we identified the ten highest-scoring student residences, providing students with the opportunity to choose the most suitable residence for their needs.</p>
+<hr>
+<h2 id="footnotes">Reference Links</h2>
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p><a href="https://www.google.co.uk/maps">Google Maps</a>&nbsp;<a href="#fnref:1" class="reversefootnote" role="doc-backlink">↩</a></p>
+    </li>
+    <li id="fn:2" role="doc-endnote">
+      <p><a href="https://www.iqstudentaccommodation.com/">IQ Student Accommodation</a>&nbsp;<a href="#fnref:2" class="reversefootnote" role="doc-backlink">↩</a></p>
+    </li>
+    <li id="fn:3" role="doc-endnote">
+      <p><a href="https://www.unitestudents.com/london">Unite Student Accommodation</a>&nbsp;<a href="#fnref:3" class="reversefootnote" role="doc-backlink">↩</a></p>
+    </li>
+    <li id="fn:4" role="doc-endnote">
+      <p><a href="https://uk.urbanest.com/">Urbanest Accommodation</a>&nbsp;<a href="#fnref:4" class="reversefootnote" role="doc-backlink">↩</a></p>
+    </li>
+    <li id="fn:5" role="doc-endnote">
+      <p><a href="https://www.chapter-living.com/">Chapter Accommodation</a>&nbsp;<a href="#fnref:5" class="reversefootnote" role="doc-backlink">↩</a></p>
+    </li>
+    <li id="fn:6" role="doc-endnote">
+      <p><a href="https://www.scape.com/en-uk/student-accommodation/london/">Scape Accommodation</a>&nbsp;<a href="#fnref:6" class="reversefootnote" role="doc-backlink">↩</a></p>
+    </li>
+  </ol>
+</div>
+
+
+<footer class="site-footer">
+  <span class="site-footer-owner"><a href="https://github.com/Judy-45/LSE-DS105-Data-Dwelling-Detectives">Rank Student Accommodation Locations In London</a> is maintained by <a href="https://github.com/Cheeseoct">Rank Team</a>.</span>
+  <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.</span>
+</footer>
+        
+
     </main>
-  
-
+ 
 </body></html>

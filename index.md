@@ -45,12 +45,16 @@ When using the Google map API, the latitude and longitude data of accommodations
 Using the crime rate API, there are different crime types including violent crime, weapon crime thefts and drugs. And in the Foursquare API, the diversity of surrounding shops is include which is a factor of assessing accommodations’ convenience level. 
 
 ## **Data cleaning**
-
+### **Distance data cleaning problem**
 Before getting all over these data scores combined, there are data cleaning problems worked out.
 
 Initially, the method of calculating the distance was to match the address field of the obtained result with the latitude and longitude of the student dormitory. However, the results could not match actual situation. For example, when using this method to get a dormitory It takes 32 minutes to go to the supermarket, but if we try to search it with Google map, we find that it only takes one minute. 
 ![sample of data cleaning](https://github.com/Judy-45/LSE-DS105-Data-Dwelling-Detectives/blob/main/figures/Data%20cleaning%20of%20caculating%20distance.png)
 To deal with it, we change the mode parameter in its API, which is changed from driving to walking by default. Also, to increase the accuracy of the destination, we separately changed the address from the result as the search word and changed it to use the place ID of Google map as the search. 
+
+### **Crime rate and diversity data cleaning problem**
+
+Moreover，
 ## **Scoring system**
 
 We utilized two questionnaires to determine the weighting of different indicators in the ratings. Our first questionnaire consisted of five items: crime rate, rental prices, transport, accessibility, and diversity. Participants were asked to rank these five items in order of importance. A total of 55 volunteer participants completed the questionnaire. The results of this questionnaire provided us with a preliminary understanding of the weighting between the different options based on the collected data. However, due to the absence of a specific scale for evaluating the importance of the options and the limited number of participants, we questioned the scientific validity and objectivity of the questionnaire.

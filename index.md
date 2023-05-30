@@ -71,7 +71,7 @@ However, there are a couple of potential disadvantages. The scores of 3 for both
 
 The median score for IQ flat is similar to the average for all factors, showing consistent overall performance. However, the slightly higher score in 'food and dairy' suggests better availability or quality of food and dairy products nearby.
 
-In summary, IQ Apartments offer advantages like convenient transportation and access to essential goods and services. However, potential disadvantages include safety measures and limited diversity in nearby shops.
+Therefore, IQ Apartments offer advantages like convenient transportation and access to essential goods and services. However, potential disadvantages include safety measures and limited diversity in nearby shops.
 
 
 #### **Unite students apartments**
@@ -97,7 +97,7 @@ However, it's important to note that Urbanest Apartments still have notable adva
 
 When considering the median score, which is broadly similar to the average across all factors, there is still an obvious decrease specifically in the 'pharmacy' option. This suggests some potential inconsistency or lower perceptions regarding pharmacy availability or quality among residents.
 
-In summary, while Urbanest Apartments offer advantages such as transportation convenience,and access to pharmacy services, there may be a potential disadvantage in terms of safety and shopping options, as indicated by the lower score. 
+To conclude, while Urbanest Apartments offer advantages such as transportation convenience,and access to pharmacy services, there may be a potential disadvantage in terms of safety and shopping options, as indicated by the lower score. 
 
 #### **Chapter Apartments**
 Based on the radar chars shown below, Chapter Apartments have strengths and one possible weakness. Advantages include high scores of 4 for "transportation" and "pharmacy," indicating excellent transportation options and convenient access to pharmacies. Scores of 3.5 for "food & dairy products" suggest a satisfactory food options.
@@ -109,7 +109,7 @@ However, Chapter Apartments might have a potential disadvantage in terms of safe
 
 The median score is similar to the average overall, but notably lower for "diversity of surrounding shops." This suggests some variability or lower perceptions of shop diversity among residents. 
 
-In summary, while Chapter Apartments offer advantages such as transportation convenience, access to pharmacy services, and a satisfactory range of food options, there may be a potential disadvantage in terms of safety, as indicated by the lower score.
+Overall, while Chapter Apartments offer advantages such as transportation convenience, access to pharmacy services, and a satisfactory range of food options, there may be a potential disadvantage in terms of safety, as indicated by the lower score.
 
 
 
@@ -119,7 +119,7 @@ Based on the radar charts shown below, Scape Apartments have both advantages and
 ![Scape median radar graph](https://github.com/Judy-45/LSE-DS105-Data-Dwelling-Detectives/blob/main/figures/scape%20median%20radar%20diagram.png)
 However, a potential drawback is the score of 3 for "transportation," indicating room for improvement in available transportation options near the complex. The median score, similar to the average, shows an increase in the 'diversity of surrounding shops,' suggesting a higher variety of nearby shops, which is advantageous for residents.
 
-To summarize, Scape Apartments offer convenient access to pharmacies, reasonable safety measures, satisfactory nearby shops, and food options. However, transportation options may need improvement.
+In summary, Scape Apartments offer convenient access to pharmacies, reasonable safety measures, satisfactory nearby shops, and food options. However, transportation options may need improvement.
 ### **Boxplot patterns analysis**
 #### **IQ Apartments**
 #### **Unite students apartments**

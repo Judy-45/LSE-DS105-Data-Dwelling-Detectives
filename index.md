@@ -88,7 +88,7 @@ The median score for IQ flat is similar to the average for all factors, showing 
 Therefore, IQ Apartments offer advantages like convenient transportation and access to essential goods and services. However, potential disadvantages include safety measures and limited diversity in nearby shops.
 
 
-#### **Unite students apartments**
+#### **Unite Students Apartments**
 
 Based on the radar charts(shown below), Unite Students Apartments have both advantages and potential disadvantages. It excels in "transportation" and "pharmacy" with a score of 4, indicating excellent access to transportation and pharmacy services, which is highly convenient for residents.
 ![unite students mean radar graph](https://github.com/Judy-45/LSE-DS105-Data-Dwelling-Detectives/blob/main/figures/Unite%20students%20mean%20radar%20diagram.png)
@@ -99,7 +99,7 @@ However, there are a couple of potential disadvantages. The "safety score" has a
 
 To summarize, Unite Students Apartments offer advantages in transportation, access to essential services, and nearby shops and food options. However, there may also be potential disadvantages related to safety that should not be overlooked when choosing accomadation.
 
-#### **Urbanest**
+#### **Urbanest Apartments**
 
 For urbanest's accommodations, based on the radar charts shown below, The scores of 3.4 for "safety score" might appears that Urbanest Apartments might have a potential disadvantage in terms of safety, as indicated by the relatively lower score. It suggests that there may be areas for improvement in ensuring a safer environment within the apartment complex or its surroundings.
 ![urbanest mean radar graph](https://github.com/Judy-45/LSE-DS105-Data-Dwelling-Detectives/blob/main/figures/urbanest%20mean%20radar%20diagram.png)

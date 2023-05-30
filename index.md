@@ -121,11 +121,18 @@ However, a potential drawback is the score of 3 for "transportation," indicating
 
 In summary, Scape Apartments offer convenient access to pharmacies, reasonable safety measures, satisfactory nearby shops, and food options. However, transportation options may need improvement.
 ### **Boxplot patterns analysis**
-#### **IQ Apartments**
-#### **Unite students apartments**
-#### **Urbanest**
-#### **Chapter Apartments**
-#### **Scape Apartments**
+#### **Crime rate analysis**
+![crimte rate boxplot graph](https://github.com/Judy-45/LSE-DS105-Data-Dwelling-Detectives/blob/main/figures/crime%20rate%20score%20boxplot%20graph.jpeg)
+
+In the boxplot diagram of crime rate scores of each brand, Urbanest’s accommodations have the highest median which means higher safety level, compared with the lowest median of the Unite students. Therefore, the accommodations of Unite students are not really competitive in safety aspect. Also, Scape and Scape provide similar quality of safety level of accommodations.
+#### avg time to food service analysis****
+![averge time to nearby food service](https://github.com/Judy-45/LSE-DS105-Data-Dwelling-Detectives/blob/main/figures/avg%20time%20to%20food%20service%20boxplot%20graph.jpeg)
+In the food service aspect, Urbanest’ accommodations have lower median, indicating easier access to supermarkets, convenience and restaurants. While Unite students has the highest median which means students staying here have to spend more time in hunting food.
+
+#### **averge time to nearby phamarmacy analysis**
+![averge time to nearby phamarmacy](https://github.com/Judy-45/LSE-DS105-Data-Dwelling-Detectives/blob/main/figures/avg%20time%20to%20nearby%20pharmacy%20boxplot%20graph.jpeg)
+In the aspect of accessing to pharmacy, Chapter with lowest median gives lowest median, indicating shortest time to get to nearby pharmacy. Although Urbanest has greater median, their difference are not extremely significant. However, the outlier of IQ, which has a greatly long time in accessing to pharmacy should not be ignored
+
 #### **Average time to subway and bus stops**
 ![avg time to subway and bus stations boxplot graoh](https://github.com/Judy-45/LSE-DS105-Data-Dwelling-Detectives/blob/4a6e3af28d9e38ebfca72d97a34664eff1e27eec/figures/avg%20time%20to%20subway%20and%20bus%20stations%20boxplot%20graph.jpeg)
 Based on the data provided, it is possible to compare the average time taken to reach a bus or metro stop for different hostel brands. The 'iQ' and 'Urbanest' brands have relatively low median and interquartile values, indicating a shorter average travel time. However, it is worth noting that both brands have outliers, indicating occasional unusually long travel times. On the other hand, the 'Unite students' and 'Chapter' brands exhibit higher median and interquartile values, indicating longer average travel times, but without any significant outliers. In contrast, the 'Scape' brand stood out with a longer average travel time, and it did have an outlier. This suggests that, in most cases, this brand has a longer average travel time, but occasionally there are instances where the travel time is significantly longer. Based on these analyses, the 'iQ' and 'Urbanest' may be more convenient for commuting as they have shorter average travel times, despite the outliers.

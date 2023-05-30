@@ -103,7 +103,7 @@ To conclude, while Urbanest Apartments offer advantages such as transportation c
 Based on the radar chars shown below, Chapter Apartments have strengths and one possible weakness. Advantages include high scores of 4 for "transportation" and "pharmacy," indicating excellent transportation options and convenient access to pharmacies. Scores of 3.5 for "food & dairy products" suggest a satisfactory food options.
 
 ![Chapter mean radar diagram](https://github.com/Judy-45/LSE-DS105-Data-Dwelling-Detectives/blob/main/figures/chapter%20mean%20radar%20diagram.png)
-![Chapter median radar diagram](https://github.com/Judy-45/LSE-DS105-Data-Dwelling-Detectives/blob/main/figures/chapter%20median%20diagram.png))
+![Chapter median radar diagram](https://github.com/Judy-45/LSE-DS105-Data-Dwelling-Detectives/blob/main/figures/chapter%20median%20diagram.png)
 
 However, Chapter Apartments might have a potential disadvantage in terms of safety, as indicated by the relatively lower score of 3. It suggests that there may be areas for improvement in ensuring a safer environment within the apartment complex or its surroundings.
 

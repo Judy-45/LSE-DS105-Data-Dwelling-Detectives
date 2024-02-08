@@ -1,0 +1,667 @@
+---
+title: "💻 LSE D202W 2024: Week 01 - Lab"
+author: "MY NAME (MY CANDIDATE NUMBER)"
+date: 15 January 2024
+format: html
+self-contained: true
+---
+
+# 📋 Lab Tasks
+
+## ⚙️ Setup
+
+If you are reading this on your computer, you have already completed this task!
+
+- [x] Step 1: Install R and RStudio or VSCode
+- [x] Step 2: Open RStudio or VS Code
+- [x] Step 3: Create a new "project" folder
+- [x] Step 4: Download this file 🙃
+- [ ] Step 5: Try rendering this document to HTML.
+
+```{r}
+library(magrittr) #we're using pipes in this lab so this is the one import we'll need.
+```
+
+## (Part 3) Reviewing fundamental concepts of R/tidyverse
+
+Tick the boxes as you complete the tasks to feel a sense of accomplishment!
+
+- [ ] Step 1: Creating and manipulating vectors
+- [ ] Step 2: Chaining operations with the pipe operator (`%>%`)
+- [ ] Step 3: Repeating operations with `for` loops
+- [ ] Step 4: Combining operations in functions
+- [ ] Step 5: Transforming `for` loops with `sapply`
+
+
+### Vectors {#sec-vectors}
+
+1. Try the basic vector manipulations from the examples and check that you understand the results.
+```{r}
+
+# This is a code chunk. You can use it to write and run R code.
+# Once you render the document, the code will be executed and the output will be displayed.
+
+#Creating vectors (chunk 1)
+
+x <- c(22L,30L,42L) #vector of integers
+y <- c(6.02214,3.14159,6.674) #vector of numerics
+z <- c(FALSE, TRUE, FALSE) #vector of logicals
+s <- c("Darth Vader", "Luke Skywalker", "Han Solo") #vector of characters
+```
+
+You can try and print out the actual content of your vectors, once you've created them:
+
+```{r}
+print(x)
+print(y)
+print(z)
+print(s)
+```
+
+This outputs the following response:
+
+```r
+> print(x)
+[1] 22 30 42
+> print(y)
+[1] 6.02214 3.14159 6.67400
+> print(z)
+[1] FALSE  TRUE FALSE
+> print(s)
+[1] "Darth Vader"    "Luke Skywalker" "Han Solo"  
+```
+
+If you now run the chunk below (chunk 2)
+```{r}
+#(chunk 2)
+#run this chunk after chunk 1 (creation of vectors)
+y <- sort(y) # operation to sort the content of y
+v <- x^2/2 - y*3 + 5 
+w <- mean(y) # computing the mean of y
+```
+
+then try to output the values of the variables you defined in (chunk 2):
+
+```{r}
+print(y)
+print(v)
+print(w)
+```
+
+then this is the output you get:
+
+```r
+> print(y)
+[1] 3.14159 6.02214 6.67400
+> print(v)
+[1] 237.5752 436.9336 866.9780
+> print(w)
+[1] 5.279243
+```
+
+Running (chunk 3)
+```{r}
+#(chunk 3)
+a <- c(1:10) #a sequence of numbers from 1 to 10 with an increment of 1
+b <- seq(-3,3,by=0.5) #a sequence of numbers from -3 to 3 with an increment of -0.5
+```
+
+then printing out the variables defined in it
+
+```{r}
+print(a)
+print(b)
+```
+
+results in the following output:
+
+```r
+> print(a)
+ [1]  1  2  3  4  5  6  7  8  9 10
+> print(b)
+ [1] -3.0 -2.5 -2.0 -1.5 -1.0 -0.5  0.0  0.5  1.0  1.5  2.0  2.5  3.0
+```
+
+Running (chunk 4):
+```{r}
+# (chunk 4)
+# run this chunk after (chunk 3)
+d <- rep(a, times=2)
+e <- rep(a, each=2)
+```
+
+then printing out the variables defined in it:
+
+```{r}
+print(d)
+print(e)
+```
+
+results in the following output:
+
+```r
+> print(d)
+ [1]  1  2  3  4  5  6  7  8  9 10  1  2  3  4  5  6  7  8  9 10
+print(e)
+> print(e)
+ [1]  1  1  2  2  3  3  4  4  5  5  6  6  7  7  8  8  9  9 10 10
+```
+ The difference between using the `times` keyword with the `rep` function ,as opposed to the `each` keyword, is that the full vector is repeated (consecutively) as many times specified by the `times` keyword whereas with `each`, it's each vector element that is replicated consecutively as many times as specified by the keyword. 
+
+
+Finally, running (chunk 5) 
+```{r}
+# (chunk 5)
+s[2]
+s[c(1,3)]
+s[-3]
+s[3] <- "Princess Leia"
+s <- append(s,c("Han Solo","Yoda"))
+```
+
+then printing out the result of the chunk:
+```{r}
+print(s)
+```
+
+ results in this output:
+
+```r
+> print(s)
+[1] "Darth Vader"    "Luke Skywalker" "Princess Leia"  "Han Solo"      
+[5] "Yoda" 
+```
+2.  Could you create three vectors:
+   - a vector `k` which is a sequence from 8 to 1 (i.e descending order) in increments of 2
+   - a vector `m` which contains the content of `k` repeated three times
+   - a vector `n` containing three copies of `k`, with a 0 separating each copy from the next one?
+
+```{r}
+k <- seq(8,1,by=-2)
+```
+
+Here's what you get if you print out `k`:
+
+```{r}
+print(k)
+```
+
+```{r}
+m <- rep(k,times=3) #you make use of the `rep` function here with keyword `times`
+```
+
+A simple solution uses already defined vector `m` then modifies it.
+```{r}
+m_onezero <- append(m,0,after=4)
+n <- append(m_onezero,0,after=9)
+```
+
+We could also have written the previous solution as:
+
+```{r}
+n <- append(append(m,0,after=4),0,after=9)
+```
+However, this nested function call is less legible.
+
+You could also use the pipe operator (`%>%`) here (after loading the right library!):
+
+```{r}
+n <- m %>%
+     append(0,after=4) %>%
+     append(0,after=9)
+```
+
+(As before, use `print(n)` to check the result and see that we get the same result each time)
+
+3. Can you check whether `m` is equal to `n`?
+
+```{r}
+m==n
+```
+
+4. Note that you should also obtain a warning message because the 2 vectors are not of the same length. How can you check the length of both vectors (i.e `m` and `n`)?
+
+```{r}
+length(m)
+length(n)
+```
+
+5. What will happen in the examples from the code chunk below? Try to guess and confirm your guess by running the code.
+
+```{r}
+   num_char <- c(1, 2, 3, "a")
+   num_logical <- c(1, 2, 3, TRUE)
+   char_logical <- c("a", "b", "c", TRUE)
+   tricky <- c(1, 2, 3, "4")
+```
+
+Vectors can be of only one data type. R tries to convert (coerce) the content of this vector to find a “common denominator” that doesn’t lose any information.
+Therefore, elements in `num_char`, `char_logical` and `tricky` are coerced to type `character`, while elements in `num_logical` are coerced to type `double`.
+
+6.Suppose the following vector represents flu cases over a given number of weeks: 
+```{r}
+   flu_cases <- c(NA, 1, 0, 0, 3, NA, 3, 3, 61, 411, 2570,7208)
+```
+
+   - Could you remove the missing values from the vector?
+```{r}
+flu_cases <- na.omit(flu_cases)
+```
+
+   - How many weeks were the number of cases over 10?
+```{r}
+sum(flu_cases>10)
+```
+
+   - Could you compute the mean and standard deviation associated with the number of flu cases?
+  
+```{r}
+mean(flu_cases)
+sd(flu_cases)
+```
+
+   - Was there a week where the number of cases was equal to 42? And if so, which was it? Same questions with value 3.
+```{r}
+42 %in% flu_cases # returns FALSE, which means that no week had 42 cases, so no need to find which week had 42 cases
+3 %in% flu_cases # returns TRUE, which means that at least one week had 3 cases, so we need to find which week(s) had 3 cases
+which(flu_cases==3) # finds all indices in vector flu_cases that satisfy the condition, in this case, we find all the indices, i.e weeks, where the value of the vector, i.e the number of cases, is equal to 3
+```
+
+### Chaining operations with the pipe operator (`%>%`)
+
+  The pipe operator, `%>%`, comes from the `magrittr` package by Stefan Milton Bache. Packages in `tidyverse` load `%>%` automatically, so you don’t usually load `magrittr` explicitly. 
+
+This means that, before we are able to use the pipe operator, we either have to load the `magrittr` library or the `tidyverse` library (we would usually load `tidyverse` if we are going to use other `tidyverse` functions) after having made sure we have `magrittr` and/or `tidyverse` installed.
+
+:::callout-tip
+## Note on installing and loading packages in R
+
+How do I install a package in R e.g `tidyverse`?
+
+> Just run `install.packages("tidyverse")` in your R console. This will install all the packages that are part of the `tidyverse` ecosystem. 
+>
+> DO NOT leave an `install.packages()` command in your .qmd file. Always do this in the R Console. Otherwise, you won't be able to render your markdown file as an HTML later.
+>
+
+How do I load a package/library that I have already installed e.g `magrittr`?
+
+>To load `magrittr`, you simply need to execute the call `library(magrittr)` before you use any function that comes from this package (e.g pipe).
+
+>However, in your `.qmd` file, make it a habit to create and dedicate your first chunk of code to loading all the packages you'll use using the `library()` function. While it's true that you may not know all the packages you will need when starting a new file, making the first chunk a reserved space for the task of loading libraries creates a neat, centralised hub. In this lab, since we simply need the pipe operator for now, we would simply load `magrittr` with `library(magrittr)` in that first chunk of code: we can circle back to it if we need to add further libraries. You have to rerun the chunk for the packages to be loaded, every time you add a new `library()` call to the chunk.
+
+:::
+
+It allows you to chain together sequences of operations and has four main advantages:
+ 
+ - you structure the sequence of your data operations from left to right, as apposed to from inside and out;
+ - you avoid nested function calls (that was one of the possible solutions to create vector `n` in question 2 in @sec-vectors);
+ - you minimize the need for local variables and function definitions
+ - you make it easy to add steps anywhere in the sequence of operations
+
+What does it mean in practice?
+
+Let's go back to the flu cases example.
+
+Suppose we want to only look at the first 9 weeks of data, replace the missing values in this subset of data with value 0 and then count how many weeks within the period the number of cases was equal to 0.
+
+We could write the sequence of operations as follows:
+
+```{r}
+
+flu_cases <- c(NA, 1, 0, 0, 3, NA, 3, 3, 61, 411, 2570, 7208)
+flu_cases <- flu_cases[1:9]
+flu_cases <- replace(flu_cases,is.na(flu_cases),0)
+zero_cases <- length(subset(flu_cases,flu_cases==0))
+```
+
+Notice the number of assignments and nested function calls.
+
+If we print out, the variables from the previous block, here's what we'd see:
+
+```{r}
+print(flu_cases)
+print(zero_cases)
+```
+
+Alternatively, we could rewrite the sequence with the pipe (`%>%`) operator:
+
+```{r}
+zero_cases <- c(NA, 1, 0, 0, 3, NA, 3, 3, 61, 411, 2570, 7208) %>% 
+   .[1:9] %>% #in this line and the following . replaces the vector c(NA, 1, 0, 0, 3, NA, 3, 3, 61, 411, 2570, 7208) i.e flu_cases
+   replace(is.na(.),0) %>%
+   subset(.==0) %>%
+   length()
+```
+
+The result of this block is the same as previously, but we've rewritten the block in a more legible, modular and ste-by-step fashion.
+
+In this case, each line performs an operation from the sequence : the pipe is essentially equivalent to an English language 'then'; define this vector *then* take its first nine values *then* replace the missing values within it with the value 0 *then* take the subset of this vector where the value is equal to 0 *then* take the length of the resulting vector (i.e count the number of weeks within the first nine weeks where the number of cases is 0).
+
+For details on pipes, have a look at [this tutorial](https://www.datacamp.com/tutorial/pipe-r-tutorial).
+
+🎯 **ACTION POINTS**
+
+1. Can you re-create vector `n` from question 2 of @sec-vectors using the pipe operator?
+
+```{r}
+n <- m %>%
+     append(0,after=4) %>%
+     append(0,after=9)
+```
+
+2. Use the `sample` function to create two vectors (you can choose the vector length) whose values are in the range `[7-42]`. 
+   Append both vectors together, then scale the resulting vector before only selecting negative values and getting a count of negative values. Use the pipe operator to write your sequence of operations.
+
+   ```{r}
+   #write your answer here
+   vector_range <- 7:42 #specifying the value range of both vectors we'll create
+   l1 <- 10 #length of the first vector
+   l2 <- 23 #length of the second vector
+   v1 <- sample(vector_range,l1) #creating a first vector whose values are in the range [7-42] and of length l1, i.e 10 here
+   v2 <- sample(vector_range,l2) #creating a second vector whose values are in the range [7-42] and of length l2, i.e 23 here
+   neg_count <- append(v1,v2) %>% # line that appends both created vectors together
+                scale() %>% #scaling the values of the resulting vector
+                .[,1] %>%   # since the `scale` function also returns scaling attributes, this line is necessary to only extract scaled values
+                subset(.<0) %>% #finding the subset of values that are negative
+                length() #counting the number of negative values i.e taking the length of the vector obtained in the previous step
+   ```
+
+### `For` loops
+
+Suppose that, for some reasons, you want to print out sentences of the form: "The year is [year]"" where [year] is equal to 2019, 2020, up to 2024. You can do this as follows:
+
+```{r}
+print(paste("The year is", 2019))
+print(paste("The year is", 2020))
+print(paste("The year is", 2021))
+print(paste("The year is",2022))
+print(paste("The year is", 2023))
+print(paste("The year is", 2024))
+```
+Running this code block gives you a result that looks like this:
+
+```r
+> print(paste("The year is", 2019))
+[1] "The year is 2019"
+print(paste("The year is", 2020))
+> print(paste("The year is", 2020))
+[1] "The year is 2020"
+> print(paste("The year is", 2021))
+[1] "The year is 2021"
+> print(paste("The year is",2022))
+[1] "The year is 2022"
+> print(paste("The year is", 2023))
+[1] "The year is 2023"
+> print(paste("The year is", 2024))
+[1] "The year is 2024"
+```
+
+As you quickly see, this is rather tedious since you copy the same code chunk over and over again. Rather than doing this, you could use a `for` loop to write repetitive parts of code.
+
+Using a `for` loop, the code above transforms into:
+
+```{r}
+for (year in 2019:2024){
+  print(paste("The year is", year))
+}
+```
+
+Running this code block gives the following result:
+
+```r
+> for (year in 2019:2024){
++   print(paste("The year is", year))
++ }
+[1] "The year is 2019"
+[1] "The year is 2020"
+[1] "The year is 2021"
+[1] "The year is 2022"
+[1] "The year is 2023"
+[1] "The year is 2024"
+```
+
+The best way to understand this loop is as follows: "For each year that is in the sequence `2019:2024`, you execute the code chunk `print(paste("The year is", year))`". Once the `for` loop has executed the code chunk for every year in the vector (i.e sequence `2019:2024`), the loop stops and goes to the first instruction after the loop block.
+
+🎯 **ACTION POINTS**
+
+9. Suppose you have a new vector of characters:
+```{r}
+t <- c("R2-D2","Chewbacca","Obi-Wan Kenobi")
+```
+
+    
+- Could you write code that creates a vector that contains all the Star Wars character names, then, for each name, counts the number of characters, then finds the Star Wars character with longest name? Use a `for` loop in your code.
+  
+  ```{r}
+  #write your answer here
+  #Let's start with vector `s` that was defined in @sec-vectors
+
+  s <- c("Darth Vader", "Luke Skywalker", "Han Solo")
+  # we modify `s` as shown in @sec-vectors to include all possible known Starwars characters
+  
+  s[3] <- "Princess Leia"
+  s <- append(s,c("Han Solo","Yoda"))
+
+  #we append `s` and `t` in a single vector that includes all (known) Starwars character names
+  char_names <- append(s,t)
+
+  #we now write our `for` loop
+
+  vec_chars <- c() #we need a variable (vector) that stores the number of characters per Starwars character name
+  
+  # now we start the loop
+  for (i in char_names){
+      vec_chars[i]=nchar(i)
+  }
+  
+  #finding the Starwars character with the longest name
+  
+  which(vec_chars==max(vec_chars)) #this returns two values: "Luke Skywalker" (with its index in the vector i.e 2) and "Obi-Wan Kenobi" (with its index in the vector i.e 8)
+  ```
+
+- Could you write code that creates a vector that contains all the Star Wars character names, then, for each name, counts the number of characters and prints out a line of the form "The character name [name of character] is composed of [x] characters" (e.g "The character name Yoda is composed of 4 characters")?
+
+```{r}
+ #write your answer here
+
+ #We start as we did before with vectors `s` and `t`
+ t <- c("R2-D2","Chewbacca","Obi-Wan Kenobi")
+
+ s <- c("Darth Vader", "Luke Skywalker", "Han Solo")
+ # we modify `s` as shown in @sec-vectors to include all possible known Starwars characters
+ s[3] <- "Princess Leia"
+ s <- append(s,c("Han Solo","Yoda"))
+
+ #we append `s` and `t` in a single vector that includes all (known) Starwars character names
+ char_names <- append(s,t)
+
+ # we write our `for` loop
+
+ for (i in char_names){
+    n_chars <- nchar(i) 
+    print(paste("The character name",i,"is composed of",n_chars,"characters"))
+ }
+```
+
+### Functions
+
+In this lab, we've encountered and used quite a few different pre-made functions in  (e.g `c()`, `replace()`, `subset()`, `sample()`, `rep()`, `length()`), but sometimes you just need to write your own function to tackle your data, i.e your set/succession of (reproducible) instructions.
+
+A function is simply a code block that performs a specific task (which can be more or less complex), e.g as calculating a sum. 
+
+You should think of writing a function whenever you’ve copied and pasted a block of code more than twice.
+
+In R, functions are of the form:
+
+```r
+name_of_the_function <- function(arguments) {
+function_content
+}
+```
+
+You give your function a (meaningful) name (`name_of_the_function`
+), define your function arguments (`arguments`
+) i.e the parameters it needs to perform the task it supposed to perform, and put some content in the function. You define how the function should deal with the input/arguments to perform the task it needs to perform in `function_content`.
+
+Here's, as an example, a very simple function to sum two numbers:
+
+```{r}
+sum_twonumbers <- function(number1, number2){
+     result <- number1 + number2
+     return(result)
+     }
+```
+
+As expected, you can invoke this function multiple times with different parameters and get different sum results e.g:
+```{r}
+sum_twonumbers(45,6)
+sum_twonumbers(1007888,177999)
+sum_twonumbers(42,1337)
+```
+
+The result of running the code block above looks like this:
+
+```r
+> sum_twonumbers(45,6)
+[1] 51
+> sum_twonumbers(1007888,177999)
+[1] 1185887
+> sum_twonumbers(42,1337)
+[1] 1379
+```
+
+🎯 **ACTION POINTS**
+
+10. Could you write a function that takes a vector of characters as an input, counts the number of characters for each element of the vector and and prints out a line of the form "The character name [name of character] is composed of [x] characters" (e.g "The character name Yoda is composed of 4 characters")?
+```{r}
+#write your answer here
+# It's basically the same code as in the second question of Question 9 (`for` loop section) but wrapped in a function call!
+# We pass the function an argument `vec_characters` which is a vector of characters
+# The rest of the code is unchanged from Question 9 :)
+print_vecElements_charCount <- function(vec_characters) {
+   for (i in vec_characters){
+    n_chars <- nchar(i) 
+    print(paste("The character name",i,"is composed of",n_chars,"characters"))
+    }
+}
+```
+11. Write `both_na()`, a function that takes two vectors of the same length and returns the number of positions that have an NA in both vectors (hint: create example vectors with NA in them to test your function).
+```{r}
+#write your answer here
+#One possible solution is the following code:
+both_na <- function(x, y) {
+  sum(is.na(x) & is.na(y))
+}
+# Note that we could still modify the function to include conditions to verify the vectors are of the same length and how to handle cases where they're not. But we leave that as extra exercise :)
+```
+
+We can now test our function:
+
+```{r}
+both_na(
+  c(NA, NA, 1, 2, NA, NA, 1),
+  c(NA, 1, NA, 2, NA, NA, 1)
+)
+```
+This should return this printout:
+
+```r
+> both_na(
++   c(NA, NA, 1, 2, NA, NA, 1),
++   c(NA, 1, NA, 2, NA, NA, 1)
++ )
+[1] 3
+```
+(i.e there are 3 positions where both vectors tested have the value NA at the same position)
+
+Running the code block below:
+```{r}
+both_na(
+  c(NA, 1, 42, NA, 1, NA),
+  c(0 , 1, 42, 2, NA, 6 )
+)
+```
+returns this:
+
+```r
+> both_na(
++   c(NA, 1, 42, NA, 1, NA),
++   c(0 , 1, 42, 2, NA, 6 )
++ )
+[1] 0
+```
+i.e there are no positions where both vectors tested both have a value NA at the same time.
+
+### Transforming `for` loops with `sapply`
+
+`for` loops are all well and good and they are rather convenient (and quite easy to grasp and write!). But they're not exactly the most efficient solution (computationally) when it comes to executing repetitive pieces of code. R supports vectorization and vectorized solutions that make use of `apply` functions, such as `lapply` and `sapply` (it's often better to use `sapply` as it outputs a vector and is slightly more efficient) are more efficient than solutions that use loops, in particular `for` loops.
+
+🎯 **ACTION POINTS**
+
+12. Take the `for` loops from question 9 and see if you can rewrite them using the `sapply` function. Consult the R documentation to help you with your task or have a look at [this link](https://r-coder.com/sapply-function-r/).
+
+The first `for` loop in Question 9 can simply be rewritten, as follows, when using `sapply`
+```{r}
+  
+  vec_chars <- sapply(append(s,t), function(i) nchar(i)) #sapply returns a vector so we can assign its result directly to a vector named vec_chars
+```
+
+If we print out the vector `vec_chars` from the previous code block:
+
+```{r}
+print(vec_chars)
+```
+
+the result is the same as the `for` loop from Question 9:
+
+```r
+> print(vec_chars)
+   Darth Vader Luke Skywalker  Princess Leia       Han Solo           Yoda 
+            11             14             13              8              4 
+          R2-D2      Chewbacca Obi-Wan Kenobi 
+             5              9             14 
+```
+
+How about the second `for` loop? Remember how, in Question 10, we wrote a function that did the same thing as the second `for` loop of Question 9? We'll use this function to do our rewritting. 
+
+```{r}
+sapply(append(s,t), function(i) print_vecElements_charCount(i)) 
+```
+
+which returns the following:
+
+```r
+> sapply(append(s,t), function(i) print_vecElements_charCount(i))
+[1] "The character name Darth Vader is composed of 11 characters"
+[1] "The character name Luke Skywalker is composed of 14 characters"
+[1] "The character name Princess Leia is composed of 13 characters"
+[1] "The character name Han Solo is composed of 8 characters"
+[1] "The character name Yoda is composed of 4 characters"
+[1] "The character name R2-D2 is composed of 5 characters"
+[1] "The character name Chewbacca is composed of 9 characters"
+[1] "The character name Obi-Wan Kenobi is composed of 14 characters"
+$`Darth Vader`
+NULL
+
+$`Luke Skywalker`
+NULL
+
+$`Princess Leia`
+NULL
+
+$`Han Solo`
+NULL
+
+$Yoda
+NULL
+
+$`R2-D2`
+NULL
+
+$Chewbacca
+NULL
+
+$`Obi-Wan Kenobi`
+NULL
+```
+Note how `sapply` assigns a return value to each element of the vector it is applied on and since the function we specified does not have a return value (it only prints out a string but its return value is NULL), it assigns a value of NULL to each element.
